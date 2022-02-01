@@ -1,7 +1,7 @@
 class Player
-  attr_accessor :lives, player
-  def initialize(player)
-    @player = player
+  attr_accessor :lives, name
+  def initialize(name)
+    @name = name
     @lives = 3
   end
 
@@ -9,8 +9,8 @@ class Player
     self.lives -=1
   end
 
-  def alive?
-    self.lives > 0
+  def died?
+    self.lives == 0
 end  
 
 end

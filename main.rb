@@ -1,6 +1,8 @@
-require "./classes/player"
-require "./classes/question"
-require "./classes/game"
+require "./game"
+require "./player"
+require "./question"
 
-game1 = Game.new
-game1.play
+
+game = Game.new
+game.play
+
